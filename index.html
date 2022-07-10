@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+
+<body>
+
+    <aside> 
+        <div> 
+            <img src= "assets/kv logo.png" alt="kv logo">
+        </div>
+        <div class="List">
+            <img src="assets/List.png" alt="icon"> 
+            <span class="empList"> Employee list</span>
+        </div>
+    </aside>
+
+    <section class="flex">
+        <div class="createEmp">
+            <h1> Create Employee</h1>
+        </div>
+        <div class="empForm">
+            <form id="contact-form">
+                <div>
+                    <label for="Employee Name">Employee Name :</label>
+                    <input type="text" id="Employee Name" name="Employee Name">
+
+                </div>
+                <div>
+                    <label for="ID">Employee ID:</label>
+                    <input type="text" id="ID" name="ID">   
+
+                </div>
+                <div>
+                    <label for="email">Email ID:</label>
+                    <input id="email" type="text" name="email">   
+                </div>
+
+                <div>
+                    <label for="Joining Date">Joining Date :</label>
+                    <input type="text" id="Joining Date" name="Joining Date">
+
+                </div>
+                <div>
+                    <label for="Role">Role :</label>
+                    <select id="Role" name="Role"> 
+                        <option value="role1">Role1</option>
+                    </select>
+                    
+                </div>
+                <div>
+                    <label for="Experience">Experience:</label>
+                    <input type="text" id="Experience" name="Experience">   
+
+                </div>
+                <div>
+                    <label for="Status">Status :</label>
+                    <select id="Status" name="Status"> 
+                        <option value="status1">Status1</option>
+                    </select>
+                    
+
+                </div>
+                <div>
+                    <label for="Address">Address*:</label>
+                    <input type="text" id="Address" name="Address">   
+
+                </div>
+                <div>
+                    <label for="myfile">Upload ID proof:</label>
+                    <input type="file" id="myfile" name="myfile" value="Browse">
+                </div>
+                <div class=buttons>
+                    <button id="btn" class="create" type="submit" value="Create" onclick="change(); ">Create</button>                    
+                    <button name="cancel" class="cancel" type="button" value="Cancel" >Cancel</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+<script src="script.js">
+
+</script>
+</body>
+
+
+</html>
