@@ -1,8 +1,9 @@
+//DOM Manipulation: To Change the color of the submit button to gray upon submitting the form.
 function change() {
   document.getElementById("btn").style.backgroundColor = "grey";
   document.getElementById("btn").style.color = "white";
 
-  const isValidEmail = validateEmail();
+  const isValidEmail = validateEmail(); //call validaateEmail()
   if (!isValidEmail) {
     document.getElementById("btn").disabled = false;
     alert("You have entered an invalid email address!");
@@ -11,6 +12,7 @@ function change() {
   document.getElementById("btn").disabled = true;
 }
 
+//Regex: Validate email.
 function validateEmail() {
   var email = document.getElementById("email").value;
   console.log(email);
@@ -21,6 +23,7 @@ function validateEmail() {
   return false;
 }
 
+//Event: Employee Form
 const form = document.getElementById("contact-form");
 
 form.addEventListener("submit", callbackFunction);
@@ -34,6 +37,7 @@ function callbackFunction(event) {
   console.log(formDataObj);
 }
 
+//Debounce: Delay submit by 2 sec.
 const debounce = (fn, delay) => {
   let timer;
   return function (...args) {
