@@ -73,7 +73,7 @@ form div {
   width: 33.33%;
   padding: 20px;
 }
-input,
+form input,
 select {
   width: 100%;
   margin-bottom: 1%;
